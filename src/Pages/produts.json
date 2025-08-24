@@ -1,0 +1,17 @@
+{
+    "mouse":[
+        {"id":1,"name":"Logitech mouse","price":499,"path":"/images/mouse/mouse-1.webp"},
+        {"id":2,"name":"Logitech mouse","price":789,"path":"/images/mouse/mouse-2.jpg"},
+        {"id":3,"name":"Razer mouse","price":559,"path":"/images/mouse/mouse-3.jpg"},
+        {"id":4,"name":"Dell mouse","price":1299,"path":"/images/mouse/mouse-4.jpg"},
+        {"id":5,"name":"Razer mouse","price":634,"path":"/images/mouse/mouse-5.jpg"},
+        {"id":6,"name":"hp mouse","price":1099,"path":"/images/mouse/mouse-6.jpg"},
+        {"id":7,"name":"Logitech mouse","price":519,"path":"/images/mouse/mouse-7.jpg"},
+        {"id":8,"name":"Dell mouse","price":399,"path":"/images/mouse/mouse-8.jpg"},
+        {"id":9,"name":"hp mouse","price":889,"path":"/images/mouse/mouse-9.jpg"}
+    ],
+
+    "keyboard":[
+
+    ]
+}

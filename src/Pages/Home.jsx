@@ -39,7 +39,7 @@ function Home() {
       </section>
 
         
-      <section className="top-selling">
+      <section className="prod_gallary">
         <h2>TOP SELLING</h2>
         <div className="product-grid">
           <div className="product-card">
@@ -65,7 +65,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="top-selling">
+      <section className="prod_gallary">
         <h2>HOT DEALS</h2>
         <div className="product-grid">
           <div className="product-card">
