@@ -9,9 +9,13 @@ import logitech from './images/Logitech_logo.svg.png';
 import razer from './images/razer-logo-png_seeklogo-323721.png';
 import hp from './images/HP_logo_2008.svg.png';
 import dell from './images/Dell_Logo.svg.png';
+import adata from './images/ADATA-1.jpg';
+import asus from './images/ASUS1.jpg';
+import banner from './images/Banner-ADATA.jpg';
 
 function Home() {
   const images = [bg,keyboard, mouse, headset, webcam];
+  const slide_imgs = [adata,asus,banner];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -19,7 +23,7 @@ function Home() {
       setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
-    }, 3000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -29,13 +33,13 @@ function Home() {
       <section
         className="hero"
         style={{
-          backgroundImage: `url(${images[currentIndex]})`,
+          backgroundImage: `url(${slide_imgs[currentIndex]})`,
         }}
       >
-        <div className="overlay">
+        {/* <div className="overlay">
           <p style={{fontSize:'50px'}}>Upgrade Your Setup</p>
           <p>Latest Accessories Delivered to Your Doorstep</p>
-        </div>
+        </div> */}
       </section>
 
         

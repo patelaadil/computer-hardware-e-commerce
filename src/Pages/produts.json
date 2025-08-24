@@ -12,6 +12,10 @@
     ],
 
     "keyboard":[
-
+        {"id":1,"name":"TVS kewboard","price":499,"path":"/images/keyboard/keyboard-1.jpg"},
+        {"id":2,"name":"Dell kewboard","price":789,"path":"/images/keyboard/keyboard-2.jpg"},
+        {"id":3,"name":"LG kewboard","price":559,"path":"/images/keyboard/keyboard-3.jpg"},
+        {"id":4,"name":"Logitech Keyboard","price":1299,"path":"/images/keyboard/keyboard-4.webp"},
+        {"id":5,"name":"TVS kewboard","price":634,"path":"/images/keyboard/keyboard-5.jpg"}
     ]
 }
