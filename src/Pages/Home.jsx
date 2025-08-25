@@ -21,9 +21,9 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === slide_imgs.length - 1 ? 0 : prevIndex + 1
     );
-    }, 2500);
+    }, 3000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
