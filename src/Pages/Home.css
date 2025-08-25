@@ -26,7 +26,6 @@
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    /* background-color: rgba(255, 255, 255, 0.4);  */
 }
 
 .hero-content {
@@ -143,6 +142,21 @@
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+}
+
+.product-card button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #0056b3;
 }
 
 .featured-brands {

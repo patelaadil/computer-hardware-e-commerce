@@ -16,10 +16,122 @@
         {"id":2,"name":"Dell keyboard","price":1789,"path":"/images/keyboard/keyboard-2.jpg"},
         {"id":3,"name":"LG keyboard","price":1059,"path":"/images/keyboard/keyboard-3.jpg"},
         {"id":4,"name":"Logitech Keyboard","price":599,"path":"/images/keyboard/keyboard-4.webp"},
-        {"id":5,"name":"TVS keyboard","price":679,"path":"/images/keyboard/keyboard-5.jpg"}
+        {"id":5,"name":"TVS keyboard","price":679,"path":"/images/keyboard/keyboard-5.jpg"},
+        {"id":6,"name":"hp keyboard","price":2599,"path":"/images/keyboard/keyboard-6.avif"},
+        {"id":7,"name":"Logitech Keyboard","price":1277,"path":"/images/keyboard/keyboard-7.avif"},
+        {"id":8,"name":"Zebronics keyboard","price":2480,"path":"/images/keyboard/keyboard-8.avif"}
+    ],
+
+    "graphics-card":[
+        {"id":1,"name":"Nvidia Graphics card","price":4999,"path":"/images/graphics card/GC-1.jpeg"},
+        {"id":2,"name":"AMD Graphics card","price":16599,"path":"/images/graphics card/GC-2.jpeg"},
+        {"id":3,"name":"AMD Graphics card","price":8099,"path":"/images/graphics card/GC-3.jpeg"},
+        {"id":4,"name":"intel Graphics card","price":10499,"path":"/images/graphics card/GC-4.jpeg"},
+        {"id":5,"name":"Nvidia Graphics card","price":6999,"path":"/images/graphics card/GC-5.jpeg"},
+        {"id":6,"name":"intel Graphics card","price":14999,"path":"/images/graphics card/GC-6.jpeg"},
+        {"id":7,"name":"intel Graphics card","price":29999,"path":"/images/graphics card/GC-7.jpeg"}
+    ],
+
+    "HDD":[
+        {"id":1,"name":"WD HDD","price":5999,"path":"/images/HDD/HDD-1.avif"},
+        {"id":2,"name":"Seagate HDD","price":17099,"path":"/images/HDD/HDD-2.avif"},
+        {"id":3,"name":"Trident HDD","price":3599,"path":"/images/HDD/HDD-3.avif"},
+        {"id":4,"name":"Trident HDD","price":4639,"path":"/images/HDD/HDD-4.avif"},
+        {"id":5,"name":"WD HDD","price":6990,"path":"/images/HDD/HDD-5.avif"},
+        {"id":5,"name":"GAZELLE HDD","price":2399,"path":"/images/HDD/HDD-6.avif"}
+    ],
+
+    "headset":[
+        {"id":1,"name":"Zebronics headset","price":499,"path":"/images/headset/headset-1.avif"},
+        {"id":2,"name":"Razer headset","price":2699,"path":"/images/headset/headset-2.avif"},
+        {"id":3,"name":"boAt headset","price":1099,"path":"/images/headset/headset-3.avif"},
+        {"id":4,"name":"JBL headset","price":1819,"path":"/images/headset/headset-4.avif"},
+        {"id":5,"name":"JBL headset","price":2199,"path":"/images/headset/headset-5.avif"},
+        {"id":6,"name":"Sony headset","price":4129,"path":"/images/headset/headset-6.avif"},
+        {"id":7,"name":"Zebronics headset","price":999,"path":"/images/headset/headset-7.avif"},
+        {"id":8,"name":"Razer headset","price":1999,"path":"/images/headset/headset-8.avif"}
+    ],
+
+    "RAM":[
+        {"id":1,"name":"Kingston RAM","price":3499,"path":"/images/RAM/RAM-1.jpeg"},
+        {"id":2,"name":"ADATA RAM","price":7749,"path":"/images/RAM/RAM-2.jpeg"},
+        {"id":3,"name":"HyperX RAM","price":4199,"path":"/images/RAM/RAM-3.jpeg"},
+        {"id":4,"name":"Corsair RAM","price":1999,"path":"/images/RAM/RAM-4.jpeg"},
+        {"id":5,"name":"EVM RAM","price":999,"path":"/images/RAM/RAM-5.jpeg"}
+    ],
+
+    "SSD":[
+        {"id":1,"name":"SAMSUNG SSD","price":5999,"path":"/images/SSD/SSD-1.avif"},
+        {"id":2,"name":"EVM SSD","price":1799,"path":"/images/SSD/SSD-2.avif"},
+        {"id":3,"name":"WD SSD","price":2099,"path":"/images/SSD/SSD-3.jpeg"},
+        {"id":4,"name":"Zebronics SSD","price":1849,"path":"/images/SSD/SSD-4.jpeg"},
+        {"id":5,"name":"Crusial SSD","price":1449,"path":"/images/SSD/SSD-5.jpeg"},
+        {"id":6,"name":"SAMSUNG SSD","price":5899,"path":"/images/SSD/SSD-6.jpeg"},
+        {"id":7,"name":"Crusial SSD","price":2049,"path":"/images/SSD/SSD-7.jpeg"}
+    ],
+
+    "webcam":[
+        {"id":1,"name":"Logitech Webcam","price":2099,"path":"/images/webcams/webcam-1.jpeg"},
+        {"id":2,"name":"Zebronics Webcam","price":699,"path":"/images/webcams/webcam-2.jpeg"},
+        {"id":3,"name":"Lapcare Webcam","price":3799,"path":"/images/webcams/webcam-3.jpeg"},
+        {"id":4,"name":"Lenovo Webcam","price":2179,"path":"/images/webcams/webcam-4.jpeg"},
+        {"id":5,"name":"Razer Webcam","price":1899,"path":"/images/webcams/webcam-5.jpeg"}
     ],
 
     "all_prod":[
-        
+        {"id":1,"name":"Logitech mouse","price":499,"path":"/images/mouse/mouse-1.webp"},
+        {"id":2,"name":"Logitech mouse","price":789,"path":"/images/mouse/mouse-2.jpg"},
+        {"id":5,"name":"Crusial SSD","price":1449,"path":"/images/SSD/SSD-5.jpeg"},
+        {"id":6,"name":"SAMSUNG SSD","price":5899,"path":"/images/SSD/SSD-6.jpeg"},
+        {"id":1,"name":"SAMSUNG SSD","price":5999,"path":"/images/SSD/SSD-1.avif"},
+        {"id":2,"name":"EVM SSD","price":1799,"path":"/images/SSD/SSD-2.avif"},
+        {"id":3,"name":"WD SSD","price":2099,"path":"/images/SSD/SSD-3.jpeg"},
+        {"id":7,"name":"Crusial SSD","price":2049,"path":"/images/SSD/SSD-7.jpeg"},
+        {"id":3,"name":"Razer mouse","price":559,"path":"/images/mouse/mouse-3.jpg"},
+        {"id":1,"name":"Logitech Webcam","price":2099,"path":"/images/webcams/webcam-1.jpeg"},
+        {"id":2,"name":"Zebronics Webcam","price":699,"path":"/images/webcams/webcam-2.jpeg"},
+        {"id":3,"name":"Lapcare Webcam","price":3799,"path":"/images/webcams/webcam-3.jpeg"},
+        {"id":4,"name":"Dell mouse","price":1299,"path":"/images/mouse/mouse-4.jpg"},
+        {"id":5,"name":"Razer mouse","price":634,"path":"/images/mouse/mouse-5.jpg"},
+        {"id":1,"name":"Kingston RAM","price":3499,"path":"/images/RAM/RAM-1.jpeg"},
+        {"id":2,"name":"ADATA RAM","price":7749,"path":"/images/RAM/RAM-2.jpeg"},
+        {"id":3,"name":"HyperX RAM","price":4199,"path":"/images/RAM/RAM-3.jpeg"},
+        {"id":4,"name":"Corsair RAM","price":1999,"path":"/images/RAM/RAM-4.jpeg"},
+        {"id":5,"name":"EVM RAM","price":999,"path":"/images/RAM/RAM-5.jpeg"},
+        {"id":6,"name":"hp mouse","price":1099,"path":"/images/mouse/mouse-6.jpg"},
+        {"id":4,"name":"Lenovo Webcam","price":2179,"path":"/images/webcams/webcam-4.jpeg"},
+        {"id":5,"name":"Razer Webcam","price":1899,"path":"/images/webcams/webcam-5.jpeg"},
+        {"id":7,"name":"Logitech mouse","price":519,"path":"/images/mouse/mouse-7.jpg"},
+        {"id":1,"name":"Zebronics headset","price":499,"path":"/images/headset/headset-1.avif"},
+        {"id":2,"name":"Razer headset","price":2699,"path":"/images/headset/headset-2.avif"},
+        {"id":3,"name":"boAt headset","price":1099,"path":"/images/headset/headset-3.avif"},
+        {"id":4,"name":"JBL headset","price":1819,"path":"/images/headset/headset-4.avif"},
+        {"id":1,"name":"Nvidia Graphics card","price":4999,"path":"/images/graphics card/GC-1.jpeg"},
+        {"id":2,"name":"AMD Graphics card","price":16599,"path":"/images/graphics card/GC-2.jpeg"},
+        {"id":3,"name":"AMD Graphics card","price":8099,"path":"/images/graphics card/GC-3.jpeg"},
+        {"id":4,"name":"intel Graphics card","price":10499,"path":"/images/graphics card/GC-4.jpeg"},
+        {"id":5,"name":"Nvidia Graphics card","price":6999,"path":"/images/graphics card/GC-5.jpeg"},
+        {"id":1,"name":"TVS keyboard","price":999,"path":"/images/keyboard/keyboard-1.jpg"},
+        {"id":2,"name":"Dell keyboard","price":1789,"path":"/images/keyboard/keyboard-2.jpg"},
+        {"id":3,"name":"LG keyboard","price":1059,"path":"/images/keyboard/keyboard-3.jpg"},
+        {"id":4,"name":"Logitech Keyboard","price":599,"path":"/images/keyboard/keyboard-4.webp"},
+        {"id":5,"name":"TVS keyboard","price":679,"path":"/images/keyboard/keyboard-5.jpg"},
+        {"id":6,"name":"hp keyboard","price":2599,"path":"/images/keyboard/keyboard-6.avif"},
+        {"id":7,"name":"Logitech Keyboard","price":1277,"path":"/images/keyboard/keyboard-7.avif"},
+        {"id":8,"name":"Zebronics keyboard","price":2480,"path":"/images/keyboard/keyboard-8.avif"},
+        {"id":6,"name":"intel Graphics card","price":14999,"path":"/images/graphics card/GC-6.jpeg"},
+        {"id":7,"name":"intel Graphics card","price":29999,"path":"/images/graphics card/GC-7.jpeg"},
+        {"id":5,"name":"JBL headset","price":2199,"path":"/images/headset/headset-5.avif"},
+        {"id":6,"name":"Sony headset","price":4129,"path":"/images/headset/headset-6.avif"},
+        {"id":1,"name":"WD HDD","price":5999,"path":"/images/HDD/HDD-1.avif"},
+        {"id":2,"name":"Seagate HDD","price":17099,"path":"/images/HDD/HDD-2.avif"},
+        {"id":3,"name":"Trident HDD","price":3599,"path":"/images/HDD/HDD-3.avif"},
+        {"id":4,"name":"Trident HDD","price":4639,"path":"/images/HDD/HDD-4.avif"},
+        {"id":5,"name":"WD HDD","price":6990,"path":"/images/HDD/HDD-5.avif"},
+        {"id":5,"name":"GAZELLE HDD","price":2399,"path":"/images/HDD/HDD-6.avif"},
+        {"id":7,"name":"Zebronics headset","price":999,"path":"/images/headset/headset-7.avif"},
+        {"id":8,"name":"Razer headset","price":1999,"path":"/images/headset/headset-8.avif"},
+        {"id":8,"name":"Dell mouse","price":399,"path":"/images/mouse/mouse-8.jpg"},
+        {"id":9,"name":"hp mouse","price":889,"path":"/images/mouse/mouse-9.jpg"}
     ]
 }

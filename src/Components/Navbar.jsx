@@ -7,18 +7,15 @@ import logo from './logo.png';
 function Navbar() {
   return (
     <div className='Navbar'>
-      {/* Logo */}
       <div>
         <img src={logo} width='150px' height='150px' alt="TechVault Logo"/>
       </div>
 
-      {/* Main Links */}
       <ul className='Navbar-container'>
         <li className="Navbar-items"><Link to='/'>Home</Link></li>
         <li className="Navbar-items"><Link to='/product'>Products</Link></li>
       </ul>
 
-      {/* Search Bar */}
       <div className="search-container">
         <input 
           type="text" 
@@ -28,7 +25,6 @@ function Navbar() {
         <button className="search-btn"><i className="fa fa-search"></i></button>
       </div> 
 
-      {/* Right Side Links */}
       <ul className="Navbar-container">
         <li className="Navbar-items">
           <Link to='/cart' className="nav-icon-link">
@@ -36,7 +32,6 @@ function Navbar() {
           </Link>
         </li>
 
-        {/* Dropdown for Login/Register */}
         <li className="Navbar-items dropdown">
           <span className="nav-icon-link">
             <i className="fas fa-user"></i> Account <i className="fas fa-caret-down"></i>

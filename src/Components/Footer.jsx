@@ -14,7 +14,7 @@ function Footer() {
       <div className="Footer-column">
         <h3>Quick Links</h3>
         <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
+        <Link to="/product">Products</Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
       </div>

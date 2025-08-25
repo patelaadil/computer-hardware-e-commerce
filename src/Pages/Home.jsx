@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import bg from './images/bg.png'
 import keyboard from './images/keyboard.jpg';
 import mouse from './images/mouse.jpg';
 import headset from './images/headset.jpg';
@@ -14,7 +13,33 @@ import asus from './images/ASUS1.jpg';
 import banner from './images/Banner-ADATA.jpg';
 
 function Home() {
-  const images = [bg,keyboard, mouse, headset, webcam];
+  const products = [
+    {
+      id: 1,
+      name: "Gaming Keyboard",
+      price: 499,
+      image: keyboard
+    },
+    {
+      id: 2,
+      name: "Ergonomic Mouse",
+      price: 299,
+      image: mouse
+    },
+    {
+      id: 3,
+      name: "Surround Headset",
+      price: 699,
+      image: headset
+    },
+    {
+      id: 4,
+      name: "HD Webcam",
+      price: 599,
+      image: webcam
+    }
+  ];
+
   const slide_imgs = [adata,asus,banner];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -27,6 +52,9 @@ function Home() {
     return () => clearInterval(interval);
   }, [currentIndex]);
 
+   const handleAddToCart = (product) => {
+    alert(`${product.name} added to cart! 🛒`);
+  };
 
   return (
     <div className="Home">
@@ -36,62 +64,38 @@ function Home() {
           backgroundImage: `url(${slide_imgs[currentIndex]})`,
         }}
       >
-        {/* <div className="overlay">
-          <p style={{fontSize:'50px'}}>Upgrade Your Setup</p>
-          <p>Latest Accessories Delivered to Your Doorstep</p>
-        </div> */}
       </section>
 
         
       <section className="prod_gallary">
         <h2>TOP SELLING</h2>
         <div className="product-grid">
-          <div className="product-card">
-            <img src={keyboard} alt="Gaming Keyboard" />
-            <h3>Gaming Keyboard</h3>
-            <p>₹2,499</p>
-          </div>
-          <div className="product-card">
-            <img src={mouse} alt="Ergonomic Mouse" />
-            <h3>Ergonomic Mouse</h3>
-            <p>₹1,299</p>
-          </div>
-          <div className="product-card">
-            <img src={headset} alt="Surround Headset" />
-            <h3>Surround Headset</h3>
-            <p>₹3,499</p>
-          </div>
-          <div className="product-card">
-            <img src={webcam} alt="HD Webcam" />
-            <h3>HD Webcam</h3>
-            <p>₹2,099</p>
-          </div>
+         {products.map((img) => (
+            <div className="product-card">
+              <img src={img.image} alt="mouse" />
+              <h3>{img.name}</h3>
+              <p>₹{img.price}</p>
+              <button onClick={() => handleAddToCart(img)}>
+                Add to Cart
+              </button>
+            </div>
+          ))}
         </div>
       </section>
 
       <section className="prod_gallary">
         <h2>HOT DEALS</h2>
         <div className="product-grid">
-          <div className="product-card">
-            <img src={keyboard} alt="Gaming Keyboard" />
-            <h3>Gaming Keyboard</h3>
-            <p>₹499</p>
-          </div>
-          <div className="product-card">
-            <img src={mouse} alt="Ergonomic Mouse" />
-            <h3>Ergonomic Mouse</h3>
-            <p>₹299</p>
-          </div>
-          <div className="product-card">
-            <img src={headset} alt="Surround Headset" />
-            <h3>Surround Headset</h3>
-            <p>₹699</p>
-          </div>
-          <div className="product-card">
-            <img src={webcam} alt="HD Webcam" />
-            <h3>HD Webcam</h3>
-            <p>₹599</p>
-          </div>
+         {products.map((img) => (
+            <div className="product-card">
+              <img src={img.image} alt="mouse" />
+              <h3>{img.name}</h3>
+              <p>₹{img.price}</p>
+              <button onClick={() => handleAddToCart(img)}>
+                Add to Cart
+              </button>
+            </div>
+          ))}
         </div>
       </section>
 

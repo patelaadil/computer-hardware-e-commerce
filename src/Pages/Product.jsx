@@ -3,36 +3,31 @@ import './Home.css';
 import product from './produts.json'
 
 function Product() {
-  const mouseProducts = product.mouse;
-  const keyboardProducts = product.keyboard;
+  const all_prod = product.all_prod;
+
+   const handleAddToCart = (product) => {
+    alert(`${product.name} added to cart! 🛒`);
+  };
 
   return (
     <div className='Product'>
+
       <div className="prod_gallary">
-        <h2>MICE</h2>
+        <h2>ALL PROD</h2>
         <div className="product-grid">
-         {mouseProducts.map((img) => (
+         {all_prod.map((img) => (
             <div className="product-card">
               <img src={img.path} alt="mouse" />
               <h3>{img.name}</h3>
               <p>₹{img.price}</p>
+              <button onClick={() => handleAddToCart(img)}>
+                Add to Cart
+              </button>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="prod_gallary">
-        <h2>MICE</h2>
-        <div className="product-grid">
-         {keyboardProducts.map((img) => (
-            <div className="product-card">
-              <img src={img.path} alt="mouse" />
-              <h3>{img.name}</h3>
-              <p>₹{img.price}</p>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   )
 }
