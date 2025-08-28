@@ -7,6 +7,7 @@ import Register from './Pages/Register'
 import Login from './Pages/Logn'
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
+import Cart from './Pages/Cart';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       },
       {
         path:'/register',
-        element:<><Navbar/><Register /><Footer /></>
+        element:<><Navbar/><Register /></>
       },
       {
         path:'/contact',
@@ -34,6 +35,10 @@ function App() {
       {
         path:'/about',
         element:<><Navbar/><About /><Footer /></>
+      },
+      {
+        path:'/cart',
+        element:<><Navbar/><Cart /><Footer /></>
       }
     ])
 

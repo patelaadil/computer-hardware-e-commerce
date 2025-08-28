@@ -50,18 +50,32 @@ function Home() {
     );
     }, 3000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, []);
 
-   const handleAddToCart = (product) => {
-    alert(`${product.name} added to cart! 🛒`);
-  };
+const handleAddToCart = (product) => {
+  const existingCart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+  const productIndex = existingCart.findIndex(item => item.id === product.id);
+
+  if (productIndex !== -1) {
+    existingCart[productIndex].qty += 1;
+  } else {
+    existingCart.push({ ...product, qty: 1 });
+  }
+
+  sessionStorage.setItem("cart", JSON.stringify(existingCart));
+
+  alert(`${product.name} added to cart! 🛒`);
+};
+
+
 
   return (
     <div className="Home">
       <section
         className="hero"
         style={{
-          backgroundImage: `url(${slide_imgs[currentIndex]})`,
+          backgroundImage: `url(${slide_imgs[currentIndex]})`
         }}
       >
       </section>

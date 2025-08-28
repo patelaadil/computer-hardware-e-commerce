@@ -12,14 +12,18 @@
 }
 
 .hero {
-  height: 70vh;
-  background-size: cover;
+  height: 70vh; 
+  background-size: cover;  
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
+
 
 .hero::after {
     content: '';
@@ -53,6 +57,36 @@
 
 .hero-content button:hover {
     background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
 }
 
 .overlay {

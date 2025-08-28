@@ -5,9 +5,27 @@ import product from './produts.json'
 function Product() {
   const all_prod = product.all_prod;
 
-   const handleAddToCart = (product) => {
-    alert(`${product.name} added to cart! 🛒`);
-  };
+ const handleAddToCart = (product) => {
+  const existingCart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+  const productIndex = existingCart.findIndex(item => item.id === product.id);
+
+  if (productIndex !== -1) {
+    existingCart[productIndex].qty += 1;
+  } else {
+    existingCart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.path,
+      qty: 1
+    });
+  }
+
+  sessionStorage.setItem("cart", JSON.stringify(existingCart));
+  alert(`${product.name} added to cart! 🛒`);
+};
+
 
   return (
     <div className='Product'>
