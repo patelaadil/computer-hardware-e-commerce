@@ -31,7 +31,6 @@ function Product() {
     <div className='Product'>
 
       <div className="prod_gallary">
-        <h2>ALL PROD</h2>
         <div className="product-grid">
          {all_prod.map((img) => (
             <div className="product-card">
