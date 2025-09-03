@@ -22,7 +22,7 @@
         {"id":8,"name":"Zebronics keyboard","price":2480,"path":"/images/keyboard/keyboard-8.avif"}
     ],
 
-    "graphics-card":[
+    "graphics_card":[
         {"id":1,"name":"Nvidia Graphics card","price":4999,"path":"/images/graphics card/GC-1.jpeg"},
         {"id":2,"name":"AMD Graphics card","price":16599,"path":"/images/graphics card/GC-2.jpeg"},
         {"id":3,"name":"AMD Graphics card","price":8099,"path":"/images/graphics card/GC-3.jpeg"},

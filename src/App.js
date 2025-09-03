@@ -8,6 +8,14 @@ import Login from './Pages/Logn'
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Cart from './Pages/Cart';
+import Mouse from './Pages/Categories/Mouse';
+import Keyboard from './Pages/Categories/Keyboard';
+import Graphics from './Pages/Categories/Graphics';
+import Headset from './Pages/Categories/Headset';
+import HDD from './Pages/Categories/HDD';
+import SSD from './Pages/Categories/SSD';
+import Webcam from './Pages/Categories/Webcam';
+import RAM from './Pages/Categories/RAM';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 function App() {
@@ -39,6 +47,38 @@ function App() {
       {
         path:'/cart',
         element:<><Navbar/><Cart /><Footer /></>
+      },
+      {
+        path:'/mouse',
+        element:<><Navbar/><Mouse /><Footer /></>
+      },
+      {
+        path:'/keyboard',
+        element:<><Navbar/><Keyboard /><Footer /></>
+      },
+      {
+        path:'/graphics',
+        element:<><Navbar/><Graphics /><Footer /></>
+      },
+      {
+        path:'/webcam',
+        element:<><Navbar/><Webcam /><Footer /></>
+      },
+      {
+        path:'/HDD',
+        element:<><Navbar/><HDD /><Footer /></>
+      },
+      {
+        path:'/SSD',
+        element:<><Navbar/><SSD /><Footer /></>
+      },
+      {
+        path:'/RAM',
+        element:<><Navbar/><RAM /><Footer /></>
+      },
+      {
+        path:'/headset',
+        element:<><Navbar/><Headset /><Footer /></>
       }
     ])
 
