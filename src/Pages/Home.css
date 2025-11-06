@@ -22,6 +22,9 @@
   text-align: center;
   color: white;
   padding: 20px;
+  margin-top: 20px;
+  border: solid 5px brown;
+  z-index: -1;
 }
 
 

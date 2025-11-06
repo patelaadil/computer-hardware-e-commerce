@@ -7,13 +7,14 @@ import logo from './logo.png';
 function Navbar() {
   return (
     <div>
+      <div>
       <div className='Navbar'>
         <div>
           <img src={logo} width='150px' height='150px' alt="TechVault Logo"/>
         </div>
 
         <ul className='Navbar-container'>
-          <li className="Navbar-items"><Link to='/'>Home</Link></li>
+          <li className="Navbar-items"><Link to='/home'>Home</Link></li>
           <li className="Navbar-items"><Link to='/product'>Products</Link></li>
         </ul>
 
@@ -42,10 +43,11 @@ function Navbar() {
               <li><Link to='/register'>Register</Link></li>
             </ul>
           </li>
-        </ul>     
-      </div>
+        </ul>
 
-      <div className='CategoriesNavbar'>
+        
+        </div>
+        <div className='CategoriesNavbar'>
         <ul className='Categories-container'>
           <li className='Category-item'><Link to='/mouse'>Mouse</Link></li>
           <li className='Category-item'><Link to='/keyboard'>Keyboard</Link></li>
@@ -56,7 +58,9 @@ function Navbar() {
           <li className='Category-item'><Link to='/graphics'>Graphics Card</Link></li>
           <li className='Category-item'><Link to='/headset'>Headset</Link></li>
         </ul>
+        </div>
       </div>
+
     </div>
   );
 }

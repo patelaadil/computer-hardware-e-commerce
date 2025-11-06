@@ -160,8 +160,10 @@
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    border: solid 2px white;
+    z-index: 120;
 }
 
 .Categories-container {
@@ -179,6 +181,7 @@
     padding: 10px 5px;
     transition: all 0.3s ease;
     position: relative;
+    border: solid 2px white;
 }
 
 .Category-item a::after {
