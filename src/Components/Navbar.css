@@ -26,7 +26,7 @@
 .Navbar-items a {
     color: #e0e0e0;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     padding: 10px 5px;
     transition: all 0.3s ease;
@@ -113,7 +113,7 @@
     border: 1px solid #ffffff33;
     border-radius: 8px;
     flex: 1;
-    max-width: 450px;
+    max-width: 600px;
     min-width: 150px;
     margin: 0 20px;
     background-color: #1f1f1f;
@@ -131,7 +131,7 @@
     border-radius: 8px 0 0 8px;
     width: 100%;
     padding: 8px 12px;
-    font-size: 16px;
+    font-size: 18px;
     color: #f0f0f0;
     background-color: transparent;
 }
@@ -162,16 +162,15 @@
     align-items: center;
     padding: 0 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    border: solid 2px white;
-    z-index: 120;
 }
 
 .Categories-container {
     display: flex;
-    gap: 20px;
     list-style: none;
+    width: 100%;
     margin: 0;
     padding: 0;
+    justify-content: space-around;
 }
 
 .Category-item a {
@@ -181,7 +180,6 @@
     padding: 10px 5px;
     transition: all 0.3s ease;
     position: relative;
-    border: solid 2px white;
 }
 
 .Category-item a::after {

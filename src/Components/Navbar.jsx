@@ -1,31 +1,45 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from './logo.png';
 
 function Navbar() {
+
+  const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+  
+  function searchProduct(){
+    navigate(`/search?text=${search}`);
+    document.getElementById("search").value="";
+  };
+
   return (
-    <div>
       <div>
       <div className='Navbar'>
         <div>
-          <img src={logo} width='150px' height='150px' alt="TechVault Logo"/>
+          <img src={logo} width='145px' height='45px' alt="TechVault Logo"/>
         </div>
-
-        <ul className='Navbar-container'>
-          <li className="Navbar-items"><Link to='/home'>Home</Link></li>
-          <li className="Navbar-items"><Link to='/product'>Products</Link></li>
-        </ul>
-
+        
         <div className="search-container">
           <input 
             type="text" 
+            id="search"
             placeholder="Search Products & Accessories..." 
-            className="search-input" 
+            className="search-input"
+            onChange={(e) => setSearch(e.target.value)}
           />
-          <button className="search-btn"><i className="fa fa-search"></i></button>
+          <button className="search-btn" onClick={searchProduct}><Link to='/search'><i className="fa fa-search"></i></Link></button>
         </div> 
+
+        <ul className='Navbar-container'>
+          <li className="Navbar-items"><Link to='/'>Home</Link></li>
+        </ul>
+
+        <ul className="Navbar-conatainer">
+          <li className="Navbar-items"><Link to='/product'>Products</Link></li>
+        </ul>
+        
 
         <ul className="Navbar-container">
           <li className="Navbar-items">
@@ -33,9 +47,12 @@ function Navbar() {
               <i className="fas fa-shopping-cart"></i> Cart
             </Link>
           </li>
+        </ul>
+
+        <ul className="Navbar-container">
 
           <li className="Navbar-items dropdown">
-            <span className="nav-icon-link">
+            <span className="nav-icon-link" style={{fontSize:'18px'}}>
               <i className="fas fa-user"></i> Account <i className="fas fa-caret-down"></i>
             </span>
             <ul className="dropdown-menu">
@@ -43,9 +60,7 @@ function Navbar() {
               <li><Link to='/register'>Register</Link></li>
             </ul>
           </li>
-        </ul>
-
-        
+        </ul> 
         </div>
         <div className='CategoriesNavbar'>
         <ul className='Categories-container'>
@@ -59,7 +74,6 @@ function Navbar() {
           <li className='Category-item'><Link to='/headset'>Headset</Link></li>
         </ul>
         </div>
-      </div>
 
     </div>
   );
