@@ -18,7 +18,8 @@ function Navbar() {
       <div>
       <div className='Navbar'>
         <div>
-          <img src={logo} width='145px' height='45px' alt="TechVault Logo"/>
+          <Link to="/"><img src={logo} width='145px' height='45px' alt="TechVault Logo" /></Link>
+          
         </div>
         
         <div className="search-container">
